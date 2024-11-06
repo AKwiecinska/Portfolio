@@ -9,70 +9,76 @@
 		<link
 			href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;800&display=swap"
 			rel="stylesheet" />
+		<link rel="stylesheet" href="css/default-styles.css" />
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 
 	<body>
 		<div class="container">
-			<div class="wrapper">
-				<div class="header">
-					<div>
-						<a href="#" class="logo">AKwiecinska</a>
-					</div>
-
-					<nav class="main-nav">
-						<ul class="main-nav-list">
-							<li>
-								<a class="main-nav-link" href="#" aria-label="Go to Home"
-									>Home</a
-								>
-							</li>
-							<li>
-								<a class="main-nav-link" href="#" aria-label="Go to About"
-									>About</a
-								>
-							</li>
-							<li>
-								<a class="main-nav-link" href="#" aria-label="Go to Portfolio"
-									>Portfolio</a
-								>
-							</li>
-							<li>
-								<a class="main-nav-link" href="#" aria-label="Go to Contact"
-									>Contact</a
-								>
-							</li>
-						</ul>
-					</nav>
+			<header>
+				<div>
+					<a href="#" class="logo">AKwiecinska</a>
 				</div>
+				<nav class="header-menu">
+					<ul class="header-menu-list">
+						<li>
+							<a class="header-menu-link" href="#" aria-label="Go to Home"
+								>Home</a
+							>
+						</li>
+						<li>
+							<a class="header-menu-link" href="#" aria-label="Go to About"
+								>About</a
+							>
+						</li>
+						<li>
+							<a class="header-menu-link" href="#" aria-label="Go to Portfolio"
+								>Portfolio</a
+							>
+						</li>
+						<li>
+							<a class="header-menu-link" href="#" aria-label="Go to Contact"
+								>Contact</a
+							>
+						</li>
+					</ul>
+				</nav>
+				<div class="icons">
+					<a
+						href="https://github.com/AKwiecinska"
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label="GitHub">
+						<img src="img/github.svg" alt="Go to GitHub" />
+					</a>
+					<a
+						href="https://www.linkedin.com/in/agnieszka-kwieci%C5%84ska-1a834a20b/"
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label="LinkedIn">
+						<img src="img/linkedin.svg" alt="Go to LinkedIn" />
+					</a>
+				</div>
+			</header>
 
-				<section class="hero-section">
-					<div class="hero-text-box">
-						<p class="hero-text">agnieszka kwiecińska</p>
-						<h1 class="hero-heading">
-							<span>design.</span>
-							<span class="highlighted">develop.</span>
-							<span>deliver.</span>
-						</h1>
+			<main>
+				<div class="radial-layer">
+					<div class="hero">
+						<div class="hero-bg">
+							<div class="hero-content">
+								<p class="hero-text">agnieszka kwiecińska</p>
+								<h1 class="hero-heading">
+									<span>design.</span>
+									<span class="highlighted">develop.</span>
+									<span>deliver.</span>
+								</h1>
+							</div>
+						</div>
 					</div>
+				</div>
+			</main>
 
-					<div class="icons">
-						<a
-							href="https://github.com/AKwiecinska"
-							target="_blank"
-							rel="noopener noreferrer"
-							aria-label="GitHub">
-							<img src="img/github.svg" alt="Go to GitHub" />
-						</a>
-						<a
-							href="https://www.linkedin.com/in/agnieszka-kwieci%C5%84ska-1a834a20b/"
-							target="_blank"
-							rel="noopener noreferrer"
-							aria-label="LinkedIn">
-							<img src="img/linkedin.svg" alt="Go to LinkedIn" />
-						</a>
-					</div>
-				</section>
+			<div class="wrapper">
 				<section class="about-me-section">
 					<div class="about-me-container">
 						<p class="about-me">About me</p>
@@ -83,10 +89,51 @@
 						</p>
 					</div>
 				</section>
+
+				<section class="portfolio-section">
+					<div class="portfolio-container">
+						<h2>portfolio</h2>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in
+							purus sit amet quam porta pellentesque.
+						</p>
+						<div class="square-container">
+							<div class="gradient-square">Websites</div>
+							<div class="gradient-square">Websites</div>
+							<div class="gradient-square">Websites</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="my-stack-section">
+					<div class="my-stack-container">
+						<h2>my stack</h2>
+						<div class="icon-container">
+							<img class="" src="img/icon-1-html.png" alt="html icon" />
+							<img class="" src="img/icon-2-css.png" alt="css icon" />
+							<img class="" src="img/icon-3-js.png" alt="sql icon" />
+							<img class="" src="img/icon-4-sql.png" alt="html icon" />
+							<img
+								class=""
+								src="img/icon-5-bootstrap.png"
+								alt="bootstrap icon" />
+							<img class="" src="img/icon-6-ps.png" alt="Photoshop icon" />
+							<img
+								class=""
+								src="img/icon-7-illustrator.png"
+								alt="illustrator icon" />
+							<img class="" src="img/icon-8-XD.png" alt="XD icon" />
+							<img class="" src="img/icon-9-figma.png" alt="figma icon" />
+							<img class="" src="img/icon-10-canva.png" alt="canva icon" />
+							<img class="" src="img/icon-11-sass.png" alt="sass icon" />
+							<img class="" src="img/icon-12-git.png" alt="git icon" />
+						</div>
+					</div>
+				</section>
 			</div>
 		</div>
 
-		<!-- <div class="glassy-overlay"></div> -->
+		<div class="glassy-overlay"></div>
 		<canvas></canvas>
 		<script src="js/script.js"></script>
 	</body>
