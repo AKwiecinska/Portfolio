@@ -11,33 +11,44 @@
 			rel="stylesheet" />
 		<link rel="stylesheet" href="css/default-styles.css" />
 		<link rel="stylesheet" href="css/style.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
 	</head>
 
 	<body>
 		<div class="container">
 			<header>
 				<div>
-					<a href="#" class="logo">AKwiecinska</a>
+					<a href="#" aria-label="Go to Home" class="logo">AKwiecinska</a>
 				</div>
 				<nav class="header-menu">
 					<ul class="header-menu-list">
 						<li>
-							<a class="header-menu-link" href="#" aria-label="Go to Home"
-								>Home</a
-							>
-						</li>
-						<li>
-							<a class="header-menu-link" href="#" aria-label="Go to About"
+							<a class="header-menu-link" href="#about" aria-label="Go to About"
 								>About</a
 							>
 						</li>
 						<li>
-							<a class="header-menu-link" href="#" aria-label="Go to Portfolio"
+							<a
+								class="header-menu-link"
+								href="#portfolio"
+								aria-label="Go to Portfolio"
 								>Portfolio</a
 							>
 						</li>
 						<li>
-							<a class="header-menu-link" href="#" aria-label="Go to Contact"
+							<a
+								class="header-menu-link"
+								href="#stack"
+								aria-label="Go to My Stack"
+								>My Stack</a
+							>
+						</li>
+						<li>
+							<a
+								class="header-menu-link"
+								href="#contact"
+								aria-label="Go to Contact"
 								>Contact</a
 							>
 						</li>
@@ -63,7 +74,7 @@
 
 			<main>
 				<div class="radial-layer">
-					<div class="hero">
+					<div id="hero" class="hero">
 						<div class="hero-bg">
 							<div class="hero-content">
 								<p class="hero-text">agnieszka kwiecińska</p>
@@ -79,9 +90,9 @@
 			</main>
 
 			<div class="wrapper">
-				<section class="about-me-section">
+				<section id="about" class="about-me-section">
 					<div class="about-me-container">
-						<p class="about-me">About me</p>
+						<h3 class="about-me">About me</h3>
 						<p class="about-me-content">
 							I'm a graphic designer and beginner
 							<span class="highlighted">front-end developer</span>. Despite my
@@ -90,14 +101,16 @@
 					</div>
 				</section>
 
-				<section class="portfolio-section">
+				<section id="portfolio" class="portfolio-section">
 					<div class="portfolio-container">
 						<h2>portfolio</h2>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in
 							purus sit amet quam porta pellentesque.
 						</p>
+
 						<div class="square-container">
+							<div class="gradient-square">Websites</div>
 							<div class="gradient-square">Websites</div>
 							<div class="gradient-square">Websites</div>
 							<div class="gradient-square">Websites</div>
@@ -105,29 +118,39 @@
 					</div>
 				</section>
 
-				<section class="my-stack-section">
+				<section id="stack" class="my-stack-section">
 					<div class="my-stack-container">
 						<h2>my stack</h2>
 						<div class="icon-container">
-							<img class="" src="img/icon-1-html.png" alt="html icon" />
-							<img class="" src="img/icon-2-css.png" alt="css icon" />
-							<img class="" src="img/icon-3-js.png" alt="sql icon" />
-							<img class="" src="img/icon-4-sql.png" alt="html icon" />
+							<img class="icon" src="img/icon-1-html.png" alt="html icon" />
+							<img class="icon" src="img/icon-2-css.png" alt="css icon" />
+							<img class="icon" src="img/icon-3-js.png" alt="sql icon" />
+							<img class="icon" src="img/icon-4-sql.png" alt="html icon" />
 							<img
-								class=""
+								class="icon"
 								src="img/icon-5-bootstrap.png"
 								alt="bootstrap icon" />
-							<img class="" src="img/icon-6-ps.png" alt="Photoshop icon" />
+							<img class="icon" src="img/icon-6-ps.png" alt="Photoshop icon" />
 							<img
-								class=""
+								class="icon"
 								src="img/icon-7-illustrator.png"
 								alt="illustrator icon" />
-							<img class="" src="img/icon-8-XD.png" alt="XD icon" />
-							<img class="" src="img/icon-9-figma.png" alt="figma icon" />
-							<img class="" src="img/icon-10-canva.png" alt="canva icon" />
-							<img class="" src="img/icon-11-sass.png" alt="sass icon" />
-							<img class="" src="img/icon-12-git.png" alt="git icon" />
+							<img class="icon" src="img/icon-8-XD.png" alt="XD icon" />
+							<img class="icon" src="img/icon-9-figma.png" alt="figma icon" />
+							<img class="icon" src="img/icon-10-canva.png" alt="canva icon" />
+							<img class="icon" src="img/icon-11-sass.png" alt="sass icon" />
+							<img class="icon" src="img/icon-12-git.png" alt="git icon" />
 						</div>
+					</div>
+				</section>
+
+				<section class="my-motto-section">
+					<div class="my-motto-container">
+						<h3>my motto</h3>
+						<p class="my-motto">
+							It’s all about<span class="highlighted"> practice</span>
+						</p>
+						<p>Agnieszka kwiecińska</p>
 					</div>
 				</section>
 			</div>

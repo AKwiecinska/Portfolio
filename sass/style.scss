@@ -3,13 +3,13 @@
 header {
 	.logo {
 		position: fixed;
-		top: 0;
-		left: 0;
+		top: 10rem;
+		left: 10rem;
 		margin-top: 3rem;
 		text-decoration: none;
 		font-size: 2.4rem;
 		color: colors.$white;
-		transition: transform 0.3s;
+		transition: scale 0.3s;
 		display: inline-block;
 		z-index: 2;
 	}
@@ -20,7 +20,7 @@ header {
 
 	.logo:hover,
 	.logo:active {
-		transform: scale(1.2);
+		scale: 1.2;
 	}
 	.logo,
 	a.header-menu-link {
@@ -31,11 +31,11 @@ header {
 	}
 	.header-menu-list {
 		position: fixed;
-		top: 0;
-		right: 0;
+		top: 10rem;
+		right: 20rem;
 		display: flex;
 		flex-direction: column;
-		font-size: 2.4rem;
+		font-size: 2.2rem;
 		list-style: none;
 		z-index: 2;
 	}
@@ -48,7 +48,7 @@ header {
 
 		&:link,
 		&:visited {
-			color: rgb(107, 107, 107);
+			color: colors.$grey-hover;
 		}
 
 		&:hover,
@@ -60,8 +60,8 @@ header {
 
 .icons {
 	position: fixed;
-	bottom: 0;
-	left: 0;
+	bottom: 10rem;
+	left: 10rem;
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
@@ -69,7 +69,7 @@ header {
 	z-index: 2;
 
 	a {
-		transition: filter 0.3s, transform 0.3s;
+		transition: filter 0.3s, scale 0.3s;
 
 		&:link,
 		&:visited {
@@ -78,7 +78,7 @@ header {
 
 		&:hover,
 		&:active {
-			transform: scale(1.35);
+			scale: 1.35;
 		}
 	}
 }
@@ -90,9 +90,9 @@ main {
 		height: 100vh;
 		background: radial-gradient(
 			100% 60% at 50% 110%,
-			#14cd10 0%,
+			colors.$accent-color 0%,
 			#0a7308 50%,
-			#000 90%
+			colors.$black 90%
 		);
 	}
 
@@ -141,12 +141,6 @@ main {
 	align-items: center;
 	justify-content: center;
 
-	.about-me {
-		text-transform: uppercase;
-		letter-spacing: 0.6rem;
-		font-size: 2.6rem;
-		font-weight: 200;
-	}
 	.about-me-content {
 		font-family: 'Montserrat', sans-serif;
 		font-weight: 700;
@@ -165,6 +159,7 @@ main {
 
 	p {
 		font-size: 2rem;
+		margin-bottom: 15rem;
 	}
 	.square-container {
 		display: flex;
@@ -187,6 +182,7 @@ main {
 	}
 }
 .my-stack-section {
+	margin-bottom: 35rem;
 	.my-stack-container {
 		display: flex;
 		flex-direction: column;
@@ -199,13 +195,34 @@ main {
 	.icon-container {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
 		gap: 8rem 6rem;
 	}
 	.icon {
+		width: 26rem;
 		transition: scale 0.3s;
 	}
 	.icon:hover {
 		scale: 1.15;
+	}
+}
+
+.my-motto-section {
+	margin-bottom: 35rem;
+
+	.my-motto-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		.my-motto {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 700;
+			font-size: 14rem;
+		}
+		p {
+			font-size: 2.4rem;
+		}
 	}
 }
