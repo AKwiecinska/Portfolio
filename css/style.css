@@ -5,14 +5,14 @@ header .logo {
   margin-top: 3rem;
   text-decoration: none;
   font-size: 2.4rem;
-  color: #bfbfbf;
+  color: #dfd8d8;
   transition: scale 0.3s;
   display: inline-block;
   z-index: 2;
 }
 header .logo:link,
 header .logo:visited {
-  color: #bfbfbf;
+  color: #dfd8d8;
 }
 header .logo:hover,
 header .logo:active {
@@ -21,7 +21,7 @@ header .logo:active {
 header .logo:focus,
 header a.header-menu-link:focus {
   color: #14cd10;
-  color: #bfbfbf;
+  color: #dfd8d8;
 }
 header .header-menu-list {
   position: fixed;
@@ -44,7 +44,7 @@ header a.header-menu-link:link, header a.header-menu-link:visited {
   color: #6b6b6b;
 }
 header a.header-menu-link:hover, header a.header-menu-link:active {
-  color: #bfbfbf;
+  color: #dfd8d8;
 }
 
 .icons {
@@ -61,7 +61,7 @@ header a.header-menu-link:hover, header a.header-menu-link:active {
   transition: filter 0.3s, scale 0.3s;
 }
 .icons a:link, .icons a:visited {
-  color: #bfbfbf;
+  color: #dfd8d8;
 }
 .icons a:hover, .icons a:active {
   scale: 1.35;
@@ -181,19 +181,82 @@ main .hero .hero-content .hero-heading {
 }
 
 .my-motto-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 35rem;
+  height: 90vh;
+  background-image: url("../img/black-background-with-leaves-vegetation-texture.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+}
+.my-motto-section .my-motto-shadow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.656);
+  z-index: 0;
 }
 .my-motto-section .my-motto-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 .my-motto-section .my-motto-container .my-motto {
   font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 14rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 .my-motto-section .my-motto-container p {
   font-size: 2.4rem;
+  text-align: center;
+}
+
+.contact-section h3 {
+  margin-bottom: 5rem;
+}
+.contact-section .contact-container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.contact-section .contact-container .contact-content {
+  margin-bottom: 30rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-section .contact-container .contact-content .contact-list {
+  list-style-position: inside;
+}
+.contact-section .contact-container .contact-content .contact-list li::marker {
+  color: #14cd10;
+}
+.contact-section .contact-container .contact-content .contact-list .contact-item {
+  font-size: 4.6rem;
+  font-weight: 800;
+}
+.contact-section .contact-container .contact-content .contact-list .contact-item a {
+  color: #dfd8d8;
+  text-decoration: none;
+}
+.contact-section .contact-container .contact-content .contact-info .title {
+  font-weight: 700;
+  font-size: 2.6rem;
+}
+.contact-section .contact-container .contact-content .contact-info .contact-detail {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #6b6b6b;
+  letter-spacing: 0.1rem;
 }/*# sourceMappingURL=style.css.map */
